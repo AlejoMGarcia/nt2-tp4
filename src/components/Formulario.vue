@@ -74,9 +74,6 @@
           <div slot="required" class="alert alert-danger mt-2">
             El email es requerido.
           </div>
-          <!-- <div v-if="!emailHasValidPatter()" class="alert alert-danger mt-2">
-            El formato del email es invalido. El mismo debe ser sometext@sometext.com
-          </div> -->
         </field-messages>
       </validate>
       <br>
@@ -135,9 +132,6 @@
       },
       nameHasMaxLength() {
         return this.formData.name && this.formData.name.length == this.maxlength
-      },
-      emailHasValidPatter() {
-
       },
       cargarRegistro() {
         this.rows.push(this.formData)
